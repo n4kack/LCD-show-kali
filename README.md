@@ -2,47 +2,27 @@ LCD driver for the Raspberry PI Installation<br>
 ====================================================
 Update: <br>
 v1.9-20181204<br>
-Update to support MHS40 & MHS32<br>
-Update: <br>
-v1.8-20180907<br>
-Update to support MHS35<br>
-Update: <br>
-v1.7-20180320<br>
-Update to support Raspbian Version:March 2018(Release date:2018-03-13)<br>
-Update: <br>
-  v1.6-20170824<br>
-  Update xserver to support Raspbian-2017-08-16<br>
-Update: <br>
-  v1.5-20170706<br>
-  Update to support Raspbian-2017-07-05,Raspbian-2017-06-21<br>
-Update: <br>
-  v1.3-20170612<br>
-  fixed to support Raspbian-2017-03-02,Raspbian-2017-04-10<br>
-Update: <br>
-  v1.2-20170302<br>
-  Add xserver-xorg-input-evdev_1%3a2.10.3-1_armhf.deb to support Raspbian-2017-03-02<br>
-Update: <br>
-  v1.1-20160815<br><br>
+As Per lcdwiki/LCD-show-kali<br>
   
-1.)Step1, Install Kali for Pi <br>
+1.) Step 1, Install Kali for Pi <br>
 ====================================================
   a)Download Kali for Pi from: <br>
   https://www.offensive-security.com/kali-linux-arm-images/#1493408272250-e17e9049-9ce8
   b)Use “balenaEtcher” to prepare your SD Card with downloaded image<br>
   c)Grab a copy of the Config.txt file from the newly created boot volume of the SD card, this may come in handy later
      
-2.) Step2, Clone my repo onto your pi<br>
+2.) Step 2, Clone repo onto your pi<br>
 ====================================================
-Use SSH to connect the raspberry pi, <br>
+Use SSH to connect the raspberry pi, or plug in a HDMI screen <br>
 And Ensure that the raspberry pi is connected to the Internet before executing the following commands:
 -----------------------------------------------------------------------------------------------------
 
-```sudo rm -rf LCD-show```<br>
+```sudo rm -rf LCD-show-kali``` (only need to run this if you have an existing LCD-show-kali folder)<br>
 ```git clone https://github.com/n4kack/LCD-show-kali.git```<br>
 ```chmod -R 755 LCD-show-kali```<br>
 ```cd LCD-show-kali/```<br>
   
-3.)Step3, According to your LCD's type, excute:
+3.) Step 3, According to your LCD's type, excute:
 ====================================================
 In case of 2.4" RPi Display(MPI2401)<br>
   ```sudo ./LCD24-show```<br><br>
@@ -78,13 +58,13 @@ Cross everything and hope for the best, coz i have no idea if this will work eit
 
 Wait a few minutes,the system will restart automatically, 
 -------------------------------------------------------------------------------
-and will Kernel Panic
-power down pi, remove SD card
-mount sd card back to your computer
-locate the boot volume of the sd card, locate the config.txt file there, 
-also locate the one you copied after building the sd card (see Step 1, item c )
-open both config.txt files 
-copy the content from the one on your computer and paste that data above the 6 lines in the version on the sd card
+...and will Kernel Panic
+1. power down pi, remove SD card
+2. mount sd card back to your computer
+3. locate the boot volume of the sd card, locate the config.txt file there, 
+4. also locate the one you copied after building the sd card (see Step 1, item c )
+5. open both config.txt files 
+6. copy the content from the one on your computer and paste that data above the 6 lines in the version on the sd card
 save the vesion stored on the sd card 
 (it should now have both sets of config info. The stuff needed for kali, and the stuff needed for the display)
 eject the card, replace in Pi and boot
