@@ -2,14 +2,14 @@ LCD driver for the Raspberry PI Installation<br>
 ====================================================
 Update: <br>
 v1.9-20181204<br>
-As Per lcdwiki/LCD-show-kali<br>
+As Per github.com/lcdwiki/LCD-show-kali<br>
   
 1.) Step 1, Install Kali for Pi <br>
 ====================================================
   a)Download Kali for Pi from: <br>
-  https://www.offensive-security.com/kali-linux-arm-images/#1493408272250-e17e9049-9ce8
-  b)Use “balenaEtcher” to prepare your SD Card with downloaded image<br>
-  c)Grab a copy of the Config.txt file from the newly created boot volume of the SD card, this may come in handy later
+  https://www.offensive-security.com/kali-linux-arm-images/#1493408272250-e17e9049-9ce8 <br>
+  b)Use “balenaEtcher” to prepare your SD Card with downloaded image <br>
+  c)Grab a copy of the Config.txt file from the newly created boot volume of the SD card, this may come in handy later <br>
      
 2.) Step 2, Clone repo onto your pi<br>
 ====================================================
