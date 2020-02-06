@@ -29,6 +29,7 @@ Update: <br>
   a)Download Kali for Pi from: <br>
   https://www.offensive-security.com/kali-linux-arm-images/#1493408272250-e17e9049-9ce8
   b)Use “balenaEtcher” to prepare your SD Card with downloaded image<br>
+  c)Grab a copy of the Config.txt file from the newly created boot volume of the SD card, this may come in handy later
      
 2.) Step2, Clone my repo onto your pi<br>
 ====================================================
@@ -73,8 +74,22 @@ If you need to switch back to the traditional HDMI display<br>
   ```sudo ./LCD-hdmi```<br>
   
 Cross everything and hope for the best, coz i have no idea if this will work either <br>
+*SPOILER ALERT* it didn't - but all is not lost
 
-Wait a few minutes,the system will restart automaticall , enjoy with your LCD.
+Wait a few minutes,the system will restart automatically, 
+-------------------------------------------------------------------------------
+and will Kernel Panic
+power down pi, remove SD card
+mount sd card back to your computer
+locate the boot volume of the sd card, locate the config.txt file there, 
+also locate the one you copied after building the sd card (see Step 1, item c )
+open both config.txt files 
+copy the content from the one on your computer and paste that data above the 6 lines in the version on the sd card
+save the vesion stored on the sd card 
+(it should now have both sets of config info. The stuff needed for kali, and the stuff needed for the display)
+eject the card, replace in Pi and boot
+
+enjoy with your LCD.  ... and you now might need to calibrate the touch setting (but I'm no help to you here)
 -------------------------------------------------------------------------------
 The LCD-show.tar.gz also can be download from:
 http://www.lcdwiki.com/RaspberryPi-LCD-Driver
