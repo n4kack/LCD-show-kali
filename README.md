@@ -67,7 +67,7 @@ Wait a few minutes,the system will restart automatically,
 6. copy the content from the one on your computer and paste that data above the 6 lines in the version on the sd card
 save the vesion stored on the sd card 
 (it should now have both sets of config info. The stuff needed for kali, and the stuff needed for the display)
-eject the card, replace in Pi and boot
+7. eject the card, replace in Pi and boot
 
 enjoy with your LCD.  ... and you now might need to calibrate the touch setting (but I'm no help to you here)
 -------------------------------------------------------------------------------
