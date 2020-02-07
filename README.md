@@ -1,3 +1,8 @@
+Note: this was for testing purposes as installing this for the 64bit version of Kali 2019.4 (for RPi) resulted in kernel panics, 
+remains largely unchanged from github.com/lcdwiki/LCD-show-kali
+aside from attempt at getting the script to use a different version of the config.txt file as a base and the instructions given below
+
+
 LCD driver for the Raspberry PI Installation<br>
 ====================================================
 Update: <br>
